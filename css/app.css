@@ -1,100 +1,53 @@
 body {
-  background-color: #141414;
-  color: #ffffff;
-  /* text-align: center; */
-  font-family: "Courier New", Courier, monospace, times new roman;
+  background-color: #25255a;
 }
 
-h1 {
-  font-size: 50px;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 16px;
-  margin-top: 8px;
-}
-
-header h1,
-h2 {
-  text-align: center;
-  margin: 0px;
-  color: rgb(218, 255, 7);
-}
-
-article {
-  border-radius: 1%;
-  border: 3px solid rgb(97, 103, 155);
-  padding: 50px;
-  margin: 50px auto;
-  max-width: 690px;
-}
-
-article p {
+.custom_button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border: 0.1rem solid white;
+  border-bottom: none;
+  background-color:transparent;
+  background-color: #1b1b50;
+  padding: 0.3rem;
+  transition: padding-left 0.2s;
+  padding-left: 0.8rem;
   text-align: left;
 }
 
-footer img {
-  width: 240px;
-  height: 240px;
-  margin-top: 15px;
-  border-radius: 360%;
-  border: 5px solid rgb(97, 103, 155);
-
-
-}
-footer img:hover,
-footer img:active {
-  border-color: #ff0000;
+.custom_button:hover, .custom_button:focus{
+  transition: background-color 0.5s ease-in;
+  transition: padding-left 0.2s;
+  padding-left: 20px;
+  background-color: #2f2f88;
+  cursor: pointer;
+  user-select: none;
 }
 
-a {
-  color: rgb(0, 255, 34);
-  font-weight: bold;
-}
-a:hover,
-a:active {
-  color: #ff0000;
+.map_image {
+  background-color: #1b1b50;
 }
 
-li {
-  margin-bottom: 5px;
+.custom_button value {
+  padding-left: 0.5rem;
 }
 
-strong {
-  color: rgb(255, 217, 0);
+.bottom {
+  border-bottom: 0.1rem solid white;
+  border-radius: 0rem 0rem 0.25rem 0.25rem;
+
 }
 
-span {
-  padding : 0.2rem;
+.top {
+  border-radius: 0.25rem 0.25rem 0rem 0rem ;
 }
 
-/* CLASSES */
-.controls {
+.maps_container {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column;
+  max-width: 10rem;
 }
 
-.controls button {
-  margin-top: 2rem;
-  width: 1rem;
-  height: 1rem;
-
-  border-radius: 1rem;
-  border: 1px solid rgba(254, 0, 0, 0.2)
-}
-
-.bold {
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-.container {
-  gap: 0.5rem;
-  color:rgb(79, 255, 79);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-}
