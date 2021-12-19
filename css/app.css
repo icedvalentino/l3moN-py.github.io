@@ -2,58 +2,14 @@ body {
   background-color: #25255a;
 }
 
-.custom_button {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  border: 0.1rem solid white;
-  border-bottom: none;
-  background-color:transparent;
-  background-color: #1b1b50;
-  padding: 0.3rem;
-  transition: padding-left 0.2s;
-  padding-left: 0.8rem;
-  text-align: left;
-}
-
-.custom_button:hover, .custom_button:focus{
-  transition: background-color 0.5s ease-in;
-  transition: padding-left 0.2s;
-  padding-left: 20px;
-  background-color: #2f2f88;
-  cursor: pointer;
-  user-select: none;
-}
-
-.custom_button value {
-  padding-left: 0.5rem;
-}
-
-.bottom {
-  border-bottom: 0.1rem solid white;
-  border-radius: 0rem 0rem 0.25rem 0.25rem;
-
-}
-
-.top {
-  border-radius: 0.25rem 0.25rem 0rem 0rem ;
-}
-
-.maps_container {
-  display: flex;
-  flex-direction: column;
-  max-width: 10rem;
-}
-
 :root {
-  --switch_width: 160px;
+  --switch_width: 140px;
   --switch_height: 45px;
   --main_color: #2f2f88;
   --main_color_lighter: #3838a1;
   --main_color_darker: #05031d;
 }
+
 
 .switch_checkbox {
   transition: .4s;
@@ -62,19 +18,6 @@ body {
   flex-direction: column;
   width: calc(var(--switch_width));
   height: calc(var(--switch_height)*1.1);
-}
-
-.switch_checkbox span {
-  color: white;
-  text-align: center;
-  text-shadow: 0 0 1.8px white;
-  line-height: var(--switch_height)
-}
-
-.switch_checkbox input {
-  opacity: 0;
-  width: 0;
-  height: 0;
 }
 
 .switch_case {
@@ -91,28 +34,31 @@ body {
   width: calc(var(--switch_width) - 20px);
   height: var(--switch_height);
   border-radius: var(--switch_height);
-  
   transition: .4s;
+}
+
+.switch_checkbox span {
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 1.8px white;
+  line-height: var(--switch_height)
+}
+
+.switch_checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .switch_case img {
-  padding-top: 10px;
-  padding-right: 5px;
   height: calc(var(--switch_height) / 2);
+  padding-top: 8%;
+  padding-right: 5%;
 }
 
-input:checked + .switch_case {
-  width: calc(var(--switch_width) - 35px);
+.switch_case:hover, input:checked + .switch_case {
   background-color: var(--main_color_lighter);
   box-shadow: 0 0 4px var(--main_color_lighter);
-  padding-left: 35px;
-  transition: .4s;
+  margin-left: 15px;
 }
 
-.switch_case:hover {
-  width: calc(var(--switch_width) - 35px);
-  background-color: var(--main_color_lighter);
-  box-shadow: 0 0 4px var(--main_color_lighter);
-  padding-left: 35px;
-  transition: .4s;
-}
