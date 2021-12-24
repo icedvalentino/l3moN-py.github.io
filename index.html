@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CZSK smokes</title>
     <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
     <link rel="icon" href="./images/smoke_icon.png" type="image/x-icon" />
     <script src="./scripts/index.js"></script>
   </head>
   <body>
-    <div>
+    <div class='nav-container'>
+      <input type="checkbox" name="toggle_nav" id="toggle_nav">
+      <span class="nav-bar"></span>
+      <label class="img-container" for="toggle_nav"><img src="./images/three_lines.png" alt=""></label>
+    </div>
+
+    <!-- <div>
       <label class="switch_checkbox">
         <input type="radio" name="mapChoise">
         <span class="switch_case"><img src="./images/csgo_maps/mirage.png">Mirage</span>
@@ -39,7 +46,7 @@
         <input type="radio" name="mapChoise">
         <span class="switch_case"><img src="./images/csgo_maps/dust2.png">Dust II</span>
       </label>
-    </div>
+    </div> -->
 
   </body>
 </html>

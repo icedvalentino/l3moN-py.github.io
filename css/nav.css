@@ -1,0 +1,67 @@
+ .nav-bar {
+   position: absolute;
+   text-align: center;
+   left: 0;
+   top: 0;
+   width: 64px;
+   height: 100%;
+   background-color: var(--main_color_darker);
+   filter: drop-shadow(0 0 4px var(--main_color_darker));
+   transition: 0.4s;
+ }
+
+ .img-container {
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  top: 0;
+  left: 0;  
+}
+
+.img-container img {
+  filter: drop-shadow(0px 0px 3px rgb(255, 255, 255));
+  width: 64px;
+  height: 64px;
+  transition: 0.4s;
+}
+
+.nav-container input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  left: -9999px;
+}
+
+.nav-container input:checked ~ .nav-bar {
+  width: 198px;
+  transition: width 0.7s;
+}
+
+input:checked ~ .img-container img {
+  opacity: 0;
+  margin-left: 128px;
+  transition: 0.7s;
+}
+
+.img-container::after {
+  content: url("/images/left_arrow.png");
+  position: absolute;
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  top: 12px;
+  left: 12px;
+  filter: drop-shadow(0px 0px 3px rgb(255, 255, 255));
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+input:checked ~ .img-container::after {
+  opacity: 1;
+  margin-left: 128px;
+  transition: 0.7s;
+}
