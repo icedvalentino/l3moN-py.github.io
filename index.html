@@ -8,13 +8,25 @@
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="icon" href="./images/smoke_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/maps.css">
     <script src="./scripts/index.js"></script>
   </head>
   <body>
     <div class='nav-container'>
+      
       <input type="checkbox" name="toggle_nav" id="toggle_nav">
-      <span class="nav-bar"></span>
       <label class="img-container" for="toggle_nav"><img src="./images/three_lines.png" alt=""></label>
+     
+      <ul class="map-container">
+        <li><input type="radio" name="mapChoise" id="mapMirage"><img src="/images/csgo_maps/mirage.png" alt=""><label for="mapMirage">Mirage</label></li>
+        <li><input type="radio" name="mapChoise" id="mapInferno"><img src="/images/csgo_maps/inferno.png" alt=""><label for="mapInferno">Inferno</label></li>
+        <li><input type="radio" name="mapChoise" id="mapTrain"><img src="/images/csgo_maps/train.png" alt=""><label for="mapTrain">Train</label></li>
+        <li><input type="radio" name="mapChoise" id="mapOverpass"><img src="/images/csgo_maps/overpass.png" alt=""><label for="mapOverpass">Overpass</label></li>
+        <li><input type="radio" name="mapChoise" id="mapVertigo"><img src="/images/csgo_maps/vertigo.png" alt=""><label for="mapVertigo">Vertigo</label></li>
+      </ul>
+
+  
+      <span class="nav-bar"></span>
     </div>
 
     <!-- <div>

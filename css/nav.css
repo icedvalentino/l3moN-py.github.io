@@ -3,11 +3,13 @@
    text-align: center;
    left: 0;
    top: 0;
+   z-index: -1;
    width: 64px;
    height: 100%;
    background-color: var(--main_color_darker);
    filter: drop-shadow(0 0 4px var(--main_color_darker));
    transition: 0.4s;
+   transition-delay: 0.1s;
  }
 
  .img-container {
@@ -26,7 +28,7 @@
   transition: 0.4s;
 }
 
-.nav-container input {
+.nav-container input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   width: 0;
@@ -35,13 +37,13 @@
 }
 
 .nav-container input:checked ~ .nav-bar {
-  width: 198px;
+  width: 228px;
   transition: width 0.7s;
 }
 
 input:checked ~ .img-container img {
   opacity: 0;
-  margin-left: 128px;
+  translate: 158px;
   transition: 0.7s;
 }
 
@@ -62,6 +64,6 @@ input:checked ~ .img-container img {
 
 input:checked ~ .img-container::after {
   opacity: 1;
-  margin-left: 128px;
+  translate: 158px;
   transition: 0.7s;
 }
