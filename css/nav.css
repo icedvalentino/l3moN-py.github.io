@@ -67,3 +67,33 @@ input:checked ~ .img-container::after {
   translate: 158px;
   transition: 0.7s;
 }
+
+
+/* Default navigation */
+.default-nav {
+  list-style-type: none;
+  position: absolute;
+  color: white;
+  left: 150px;
+  z-index: 999;
+}
+
+.default-nav a {
+  color: white;
+  user-select: none;
+}
+
+.default-nav a:visited {
+  color: white;
+}
+
+.default-nav a:hover, a:active {
+  transition: 0.2s;
+  text-shadow: 0 0 2px white;
+}
+
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
