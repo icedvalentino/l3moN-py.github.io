@@ -1,0 +1,41 @@
+.center {
+    overflow: hidden;
+    /* transform: 300px; */
+  }
+
+.page-container {
+    font-size: 20px;
+    background-color: rgb(29, 10, 73);
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 6fr 3fr;
+    grid-template-rows: 10fr auto;
+    width: 97vw;
+    height: 97vh;
+    text-align: center;
+    gap: 20px;
+    grid-template-areas: 
+        "nav main main"
+        "nav . footer";
+}
+
+.main-container {
+    grid-area: main;
+    display: grid;
+    border-style: solid;
+    border-color: red;
+}
+
+.nav-container {
+    grid-area: nav;
+    display: grid;
+    border-style: solid;
+    border-color: red;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    border-style: solid;
+    border-color: red;
+}
