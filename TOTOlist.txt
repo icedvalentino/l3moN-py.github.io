@@ -1,1 +1,3 @@
-implementovat simple iconky z https://csgo-nade.com/nades
+create navigation
+create place for maps
+create option menu for nades
