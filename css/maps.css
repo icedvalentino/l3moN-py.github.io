@@ -52,7 +52,7 @@
 
 .nav-container input[type="checkbox"]:checked ~ .map-container label {
     max-width: 100%;
-    opacity: 100%;
+    pointer-events: none;
     transition-property: max-width;
     transition-delay: 0.15s;
     transition-duration: 0.7s;
