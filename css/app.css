@@ -1,5 +1,6 @@
 body {
   background-color: #25255a;
+  max-width: 100%;
 }
 
 :root {
