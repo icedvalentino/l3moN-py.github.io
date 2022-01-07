@@ -12,6 +12,9 @@ body {
   --main_color_darker: #05031d;
 }
 
+.transition-all {
+  transition: all .3s ease-in;
+}
 
 .switch_checkbox {
   transition: .4s;

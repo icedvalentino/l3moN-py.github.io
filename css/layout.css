@@ -33,9 +33,30 @@
     border-color: red;
 }
 
-.footer {
+.footer-container {
     grid-area: footer;
     display: grid;
     border-style: solid;
     border-color: red;
+}
+
+.turnOff_border {
+    background-color: var(--main_color_darker);
+    list-style-type: none;
+    position: absolute;
+    /* position: fixed; */
+    text-align: left;
+    color: rgb(255, 255, 255);
+    border: 1px solid;
+    right: 15px;
+    top: 40px;
+    z-index: 999;
+    width: 20px;
+    height: 20px;
+    transition: 0.4s;
+}
+
+.turnOff_border:checked ~ .nav-container, .turnOff_border:checked ~ .main-container, .turnOff_border:checked ~ .footer-container {
+    border: none !important;
+    
 }
