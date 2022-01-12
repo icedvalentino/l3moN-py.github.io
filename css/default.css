@@ -1,0 +1,11 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #25255a;
+    max-width: 100%;
+}
+  
+:root {
+    --main_color: #2f2f88;
+    --main_color_lighter: #3838a1;
+    --main_color_darker: #05031d;
+}

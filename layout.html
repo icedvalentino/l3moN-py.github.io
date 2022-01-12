@@ -4,35 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/app.css" type="text/css"/>
-    <link rel="stylesheet" href="./css/nav.css" type="text/css"/>
-    <link rel="stylesheet" href="./css/maps.css" type="text/css"/>
-    <link rel="stylesheet" href="./css/layout.css"type="text/css"/>
-    <title>Layout of index page</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <title>Layout</title>
   </head>
-  <body class="page-container">
-    <nav class="default-nav">
-      <u class="nav-flex">
-        <li><a href="index.html">Index</a></li>
-        <li><a href="layout.html" class="current-nav">Layout</a></li>
-        <li><a href="test.html">Test</a></li>
-        <li><a href="footer_test.html">Footer</a></li>
-      </u>
+  <body>
+    <nav class='nav-container'>
+      
+      <!-- <input type="checkbox" name="toggle_nav" id="toggle_nav"> -->
+      <!-- <label class="img-container" for="toggle_nav"><img src="./images/three_lines.png" alt=""></label> -->
+     
+      <ul class="map-container">
+        <input type="checkbox" name="toggle-nav" id="toggle-nav">
+        <label class="three-lines" for="toggle-nav" id="toggle-nav-label">
+          <img id="toggle-nav-img" src="./images/three_lines.png" alt="Button to show full navigation/hide navigation">
+        </label>
+
+        <li class="map"><input type="radio" name="map-choise" id="map-mirage">  <label for="map-mirage">  <img src="/images/csgo_maps/mirage.png" alt="Logo of map mirage"></label><label for="map-mirage">Mirage</label></li>
+        <li class="map"><input type="radio" name="map-choise" id="map-inferno"> <label for="map-inferno"> <img src="/images/csgo_maps/inferno.png" alt="Logo of map inferno"></label><label for="map-inferno">Inferno</label></li>
+        <li class="map"><input type="radio" name="map-choise" id="map-train">   <label for="map-train">   <img src="/images/csgo_maps/train.png" alt="Logo of map train"></label><label for="map-train">Train</label></li>
+        <li class="map"><input type="radio" name="map-choise" id="map-overpass"><label for="map-overpass"><img src="/images/csgo_maps/overpass.png" alt="Logo of map overpass"></label><label for="map-overpass">Overpass</label></li>
+        <li class="map"><input type="radio" name="map-choise" id="map-vertigo"> <label for="map-vertigo"> <img src="/images/csgo_maps/vertigo.png" alt="Logo of map vertigo"></label><label for="map-vertigo">Vertigo</label></li>
+      </ul>
+
     </nav>
-
-    <input type="checkbox" class="turnOff_border">
-
-    <div class="nav-container" name="nav-container">
-        <p class="center">Navigation</p>
-    </div>
-
-    <div class="main-container">
-        <p class="center">Main</p>
-    </div>
-
-    <footer class="footer-container">
-      <p class="center">Footer</p>
-    </footer>
-
   </body>
 </html>
